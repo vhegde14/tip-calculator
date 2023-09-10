@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     private lateinit var meal_1: EditText
@@ -14,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var meal_3: EditText
     private lateinit var tip_percent: EditText
     private lateinit var final_total: TextView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,20 +48,6 @@ class MainActivity : AppCompatActivity() {
                 val percentThree = price_3/totalCost
                 val totalThree = percentThree * newTotalCost
 
-//
-//                meal_1.text = total_one.toString()
-//                meal_2.text = "Meal 2 Total: ${.toString()}"
-//                meal_3.text = "Meal 3 Total: ${total_three.toString()}"
-//
-//                val meal1output = findViewById<TextView>(R.id.meal2output)
-//                meal1output.text = "Meal 1: ${totalOne.toString()}"
-//
-//                val meal2output = findViewById<TextView>(R.id.meal1output)
-//                meal2output.text = "Meal 2: ${totalTwo.toString()}"
-//
-//                val meal3output = findViewById<TextView>(R.id.meal3output)
-//                meal3output.text = "Meal 3: ${totalThree.toString()}"
-//
                 val meal1output = findViewById<TextView>(R.id.meal1output)
                 meal1output.text = "Meal 1: ${"%.2f".format(totalOne)}"
 
